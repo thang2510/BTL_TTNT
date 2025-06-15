@@ -28,17 +28,6 @@ Trong đồ án này, nhóm 13 đã xây dựng một mô hình học sâu dựa
 
 ---
 
-## 📊 Dữ liệu
-
-- Dataset: **Phishing URLs từ PhishTank**
-- Tiền xử lý:
-  - Làm sạch URL
-  - Token hóa theo ký tự (character-level tokenizer)
-  - Padding độ dài cố định
-  - Cân bằng dữ liệu bằng **ADASYN**
-
----
-
 ## 🛠️ Công nghệ & thư viện
 
 | Công cụ           | Phiên bản / Ghi chú     |
@@ -51,10 +40,3 @@ Trong đồ án này, nhóm 13 đã xây dựng một mô hình học sâu dựa
 | Matplotlib       | Trực quan hóa dữ liệu   |
 
 ---
-
-## 🚀 Cách chạy ứng dụng
-
-### 1. Huấn luyện mô hình (Colab hoặc local)
-```python
-model.fit(X_train, y_train, epochs=..., ...)
-model.save('BTL_model_dataphishingtank.keras')
